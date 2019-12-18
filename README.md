@@ -27,7 +27,7 @@
 ###    用于检查问题
 
 
-### 7. page文件是前端文件夹
+### 7. page文件是前端文件夹 存储前端文件
 
 ### 8. loder.js用以加载controller层
 ###    config.js用以加载配置文件server.conf

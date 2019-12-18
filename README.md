@@ -1,5 +1,5 @@
-# Node学习笔记
-## 1. 后端开启服务器,该项目主要使用http模块创建服务
+## Node学习笔记
+### 1. 后端开启服务器,该项目主要使用http模块创建服务
 ####    (1) server.js 就是开启服务的模块
       
 ####    (2)  http.createServer(function(){

@@ -4,7 +4,7 @@
       
 ####    (2)  http.createServer(function(){
       
-####           }) 在url访问的时候会执行该回调函数;
+####        }) 在url访问的时候会执行该回调函数;
 ####    (3) 在开启服务之前要先加载配置文件config.js
 ####         通过config.js加载server.conf配置;
          
@@ -23,16 +23,16 @@
 
 ### 5. dao层主要用来连接和处理数据库中数据
 
-### 6. log为简单记录请求服务的日志
-###    用于检查问题
+### 6. log为简单记录请求服务的日志 ,用于检查问题
 
 
 ### 7. page文件是前端文件夹 存储前端文件
 
-### 8. loder.js用以加载controller层
-###    config.js用以加载配置文件server.conf
-###    filterLoader.js用以加载filter拦截器
-###    log.js用以写入日志到log文件中   
+### 8. 各js文件作用
+#### ——   loder.js用以加载controller层
+#### ——   config.js用以加载配置文件server.conf
+#### ——   filterLoader.js用以加载filter拦截器
+#### ——   log.js用以写入日志到log文件中   
 
 
 ###  9. note文件夹为个人笔记

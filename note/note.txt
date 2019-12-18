@@ -1,0 +1,67 @@
+
+ 1. 前端请求分为几种:
+    两种
+   （1）请求一个固定的东西（静态资源） (html、css、js等)
+   （2）请求不固定的东西  （动态资源）（用户名）
+
+   需要区分是动态资源还是静态资源
+
+  2. nodejs是在主线程之下运行的
+     线程中抛出任何错,程序立即停掉
+
+
+  3. 0o666
+     0o 代表八进制
+     666 代表权限
+
+     第一个数: 文件所有者的权限
+     第二个数: 同组用户的权限
+     第三个数: 非同组用户的权限
+
+     r w x (可读、可写、可执行)
+     4 2 1
+
+     4 可读
+     6 可读可写
+     7 可读可写可执行
+
+   4. 驱动
+
+
+   5. 得到get中请求数据
+      let params = url.parse(request.url).query;
+
+      得到post中请求数据
+      request.on('data',function(data){
+
+      })
+
+    6. 用于断点调试 debug
+       F8逐行调试
+       F9结束调试
+
+
+    7. 登录、跳转常用的方式
+
+      （1） ajax请求登录、跳转
+
+      （2） from表单
+            重定向  302  临时重定向
+                    301  永久重定向
+
+            response.writeHead(302 , {
+                "location":"/main.html",  //重定向到main页面
+            })
+
+    8. 使用cookie做拦截器
+
+        document.cookie = 'name=hwt;max-age=10000;';
+
+        response.writeHead(302 , {
+             "location":"/main.html",  //重定向到main页面
+             "Set-Cookie":"id="+"id",
+        })
+
+    9. 拦截器
+
+
